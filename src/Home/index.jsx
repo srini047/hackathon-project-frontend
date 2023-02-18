@@ -10,15 +10,17 @@ import Page4 from './Page4';
 import Footer from './Footer';
 import './static/style';
 
+
 let isMobile = false;
 enquireScreen((b) => {
   isMobile = b;
 });
 
+
 class Home extends React.PureComponent {
   state = {
-    isFirstScreen: true,
     isMobile,
+    showShadow: false,
   };
 
   componentDidMount() {
@@ -28,23 +30,20 @@ class Home extends React.PureComponent {
       });
     });
   }
-
-  onEnterChange = (mode) => {
-    this.setState({
-      isFirstScreen: mode === 'enter',
-    });
+  navToShadow = (e) => {
+    this.setState({ showShadow: e.mode === 'leave' });
   }
   render() {
     return (
       [
-        <Header key="header" isFirstScreen={this.state.isFirstScreen} isMobile={this.state.isMobile} />,
-        <Banner key="banner" onEnterChange={this.onEnterChange} />,
+        <Header key="header" className={this.state.showShadow ? 'show-shadow' : ''} />,
+        <Banner key="banner" isMobile={this.state.isMobile} navToShadow={this.navToShadow} />,
         <Page1 key="page1" isMobile={this.state.isMobile} />,
-        <Page2 key="page2" />,
+        <Page2 key="page2" isMobile={this.state.isMobile} />,
         <Page3 key="page3" isMobile={this.state.isMobile} />,
         <Page4 key="page4" />,
         <Footer key="footer" />,
-        <DocumentTitle title="Ant Design - 一个 UI 设计语言" key="title" />,
+        <DocumentTitle title="Home Page" key="title" />,
       ]
     );
   }
