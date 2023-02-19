@@ -1,3 +1,4 @@
+export const baseURL = 'http://localhost:3000'
 export const header = [
   {
     title: 'Home',
@@ -11,13 +12,16 @@ export const header = [
     title: 'Features',
     children: [
       {
-        title: 'Project ideas generator', desc: '', img: 'https://gw.alipayobjects.com/zos/rmsportal/zMeJnhxAtpXPZAUhUKJH.svg', link: '/ideas',
+        title: 'Project ideas generator', desc: '', img: 'https://gw.alipayobjects.com/zos/rmsportal/zMeJnhxAtpXPZAUhUKJH.svg', link: `${baseURL}/ideas`,
       },
       {
-        title: 'Project title generator', desc: '', img: 'https://gw.alipayobjects.com/zos/rmsportal/qkNZxQRDqvFJscXVDmKp.svg', link: '/title',
+        title: 'Specific ideas generator', desc: '', img: 'https://gw.alipayobjects.com/zos/rmsportal/zMeJnhxAtpXPZAUhUKJH.svg', link: `${baseURL}/idea`,
       },
       {
-        title: 'Project description generator', desc: '', img: 'https://gw.alipayobjects.com/zos/rmsportal/MrUQjZNOJhYJCSZZuJDr.svg', link: '/description',
+        title: 'Project title generator', desc: '', img: 'https://gw.alipayobjects.com/zos/rmsportal/qkNZxQRDqvFJscXVDmKp.svg', link: `${baseURL}/title`,
+      },
+      {
+        title: 'Project description generator', desc: '', img: 'https://gw.alipayobjects.com/zos/rmsportal/MrUQjZNOJhYJCSZZuJDr.svg', link: `${baseURL}/description`,
       },
     ],
   },
@@ -37,14 +41,14 @@ export const banner = [
     imgMobile: 'https://gw.alipayobjects.com/zos/rmsportal/ksMYqrCyhwQNdBKReFIU.svg',
     className: 'seeconf-wrap',
     children: [
-      { children: 'A weird project', className: 'seeconf-en-name' },
+      { children: 'An exhilarating project', className: 'seeconf-en-name' },
       { children: 'Hackathon Project Initiater', className: 'seeconf-title', tag: 'h1' },
       { children: 'Explore the different features available to build your next hackathon project', className: 'seeconf-cn-name' },
       {
         children: 'Learn more',
         className: 'banner-button',
         tag: 'button',
-        link: '#',
+        link: `${baseURL}/ideas`,
       },
       { children: 'Ideate | Innovate | Build', className: 'seeconf-time' },
     ],
@@ -63,7 +67,6 @@ export const banner = [
         tag: 'button',
         link: '/404',
       },
-      // { children: 'In beta', className: 'seeconf-time' },
     ],
   },
 ];
@@ -77,7 +80,7 @@ export const page1 = {
       src: 'https://gw.alipayobjects.com/zos/rmsportal/KtRzkMmxBuWCVjPbBgRY.svg',
       color: '#EB2F96',
       shadowColor: 'rgba(166, 55, 112, 0.08)',
-      link: '/ideas',
+      link: `${baseURL}/ideas`,
     },
     {
       title: 'Title generator',
@@ -85,7 +88,7 @@ export const page1 = {
       src: 'https://gw.alipayobjects.com/zos/rmsportal/qIcZMXoztWjrnxzCNTHv.svg',
       color: '#1890FF',
       shadowColor: 'rgba(15, 93, 166, 0.08)',
-      link: '/title',
+      link: `${baseURL}/title`,
     },
     {
       title: 'Description generator',
@@ -93,7 +96,7 @@ export const page1 = {
       src: 'https://gw.alipayobjects.com/zos/rmsportal/eLtHtrKjXfabZfRchvVT.svg',
       color: '#AB33F7',
       shadowColor: 'rgba(112, 73, 166, 0.08)',
-      link: 'https://antv.alipay.com/zh-cn/vis/index.html',
+      link: `${baseURL}/description`,
     },
   ],
 };
@@ -115,7 +118,7 @@ export const page3 = {
 };
 
 export const page4 = {
-  title: 'Many thanks to',
+  title: 'Many thanks to 💙',
   children: [
     '', // company name
   ],
@@ -125,17 +128,17 @@ export const footer = [
   {
     title: 'Hacakthon project Initiater',
     children: [
-      { title: 'Project Ideas Generator', link: '/ideas' },
-      { title: 'Specific Idea Generator', link: '/idea' },
-      { title: 'Project Description Generator', link: '/description' },
-      { title: 'Project Title Generator', link: 'title' },
+      { title: 'Project Ideas Generator', link: `${baseURL}/ideas` },
+      { title: 'Specific Idea Generator', link: `${baseURL}/idea` },
+      { title: 'Project Description Generator', link: `${baseURL}/description` },
+      { title: 'Project Title Generator', link: `${baseURL}/title` },
     ],
   },
   {
     title: 'Upcoming features',
     children: [
-      { title: 'Login Page', link: '/login' },
-      { title: 'Dashboard', link: '/user/profile' },
+      { title: 'Login Page', link: `${baseURL}/login` },
+      { title: 'Dashboard', link: `${baseURL}/user/profile` },
     ],
   },
   {
@@ -151,10 +154,10 @@ export const footer = [
     title: '++ Code ++',
     icon: 'https://gw.alipayobjects.com/zos/rmsportal/wdarlDDcdCaVoCprCRwB.svg',
     children: [
-      { title: 'Frontend deployment', desc: '', link: '' },
-      { title: 'Backend deployment', desc: '', link: '' },
-      { title: 'Frontend repo', desc: '', link: 'https://github.com/srini047/hackathon-project-frontend' },
-      { title: 'Backend repo', desc: '', link: 'https://github.com/srini047/hackathon-projects-backend' },
+      // { title: 'Frontend deployment', desc: '', link: '' },
+      { title: 'Landing', desc: '', link: 'https://github.com/srini047/hackathon-projects-landing' },
+      { title: 'Frontend', desc: '', link: 'https://github.com/srini047/hackathon-projects-frontend' },
+      { title: 'Backend', desc: '', link: 'https://github.com/srini047/hackathon-projects-backend' },
       { title: 'Sponsor this cool project', desc: 'It might generate more than what you sponsor in the future👀', link: 'https://www.buymeacoffee.com/srini047' },
     ],
   },
