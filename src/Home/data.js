@@ -42,7 +42,7 @@ export const banner = [
     className: 'seeconf-wrap',
     children: [
       { children: 'An exhilarating project', className: 'seeconf-en-name' },
-      { children: 'Hackathon Project Initiater', className: 'seeconf-title', tag: 'h1' },
+      { children: 'HackProInit', className: 'seeconf-title', tag: 'h1' },
       { children: 'Explore the different features available to build your next hackathon project', className: 'seeconf-cn-name' },
       {
         children: 'Learn more',
