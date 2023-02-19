@@ -36,11 +36,11 @@ const pageData = [
     Bg: Building,
   },
   {
-    title: 'OpenAI',
-    content: 'cutting-edge research organization that develops AI technologies to create powerful language models and solve some of the world\'s most pressing challenges, while ensuring that AI is developed and used in a safe and ethical manner.',
-    links: (<a>stay tuned</a>),
+    title: 'Github',
+    content: 'A web-based platform used for version control and collaborative software development. It allows developers to store their code in repositories, track changes to the code over time, and collaborate with other developers on the same codebase.',
+    links: (<a href="https://github.com/" target="_blank">Know more here&nbsp;&nbsp;<Icon type="right" /></a>),
     full: true,
-    Bg: Building,
+    Bg: Tetris,
   },
   {
     title: 'GoDaddy Registry',
