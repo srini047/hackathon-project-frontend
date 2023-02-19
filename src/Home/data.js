@@ -59,8 +59,8 @@ export const banner = [
     className: 'seeconf-wrap',
     children: [
       { children: 'Find out the best', className: 'seeconf-en-name' },
-      { children: 'Tech stack for project (Beta)', className: 'seeconf-title', tag: 'h1' },
-      { children: 'Design | Frontend | Backend', className: 'seeconf-cn-name' },
+      { children: 'Tech stack & Compare (Beta)', className: 'seeconf-title', tag: 'h1' },
+      { children: 'Design | Full-stack | Comparison', className: 'seeconf-cn-name' },
       {
         children: 'In beta',
         className: 'banner-button',
